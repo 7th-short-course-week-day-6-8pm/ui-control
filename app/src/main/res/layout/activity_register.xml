@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="30dp"
+        android:textColor="#A61DBB"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:background="#F0F0F0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:layout_marginTop="16dp">
+        <EditText
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:hint="user name"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"
+        android:drawableLeft="@drawable/new_user"/>
+
+        <EditText
+            android:layout_marginBottom="16dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:hint="email"
+            android:drawableLeft="@drawable/mail"
+            android:inputType="textEmailAddress"
+            android:singleLine="false"/>
+
+        <EditText
+            android:layout_marginBottom="16dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:hint="passowrd"
+            android:drawableLeft="@drawable/key"
+            android:inputType="textPassword"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/btnRegister"
+        android:layout_marginTop="50dp"
+        android:drawableLeft="@drawable/login"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"/>
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#E0DACD"
+        android:padding="16dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User name :"
+            android:id="@+id/tvUserName"
+            android:textSize="22dp"
+            android:textColor="#000"
+            android:layout_marginBottom="8dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email :"
+            android:id="@+id/tvEmail"
+            android:textSize="22dp"
+            android:textColor="#000"
+            android:layout_marginBottom="8dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password :"
+            android:id="@+id/tvPass"
+            android:textSize="22dp"
+            android:textColor="#000"
+            android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+</LinearLayout>
